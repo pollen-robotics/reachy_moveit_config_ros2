@@ -1,0 +1,41 @@
+controller_names:
+  - reachy_left_arm_controller
+  - reachy_right_arm_controller
+  - reachy_head_controller
+
+reachy_left_arm_controller:
+  action_ns: follow_joint_trajectory
+  type: FollowJointTrajectory
+  default: true
+  joints:
+    - l_shoulder_pitch
+    - l_shoulder_roll
+    - l_arm_yaw
+    - l_elbow_pitch
+    - l_forearm_yaw
+    - l_wrist_pitch
+    - l_wrist_roll
+
+
+reachy_right_arm_controller:
+  action_ns: follow_joint_trajectory
+  type: FollowJointTrajectory
+  default: true
+  joints:
+    - r_shoulder_pitch
+    - r_shoulder_roll
+    - r_arm_yaw
+    - r_elbow_pitch
+    - r_forearm_yaw
+    - r_wrist_pitch
+    - r_wrist_roll
+
+
+reachy_head_controller:
+  action_ns: follow_joint_trajectory
+  type: FollowJointTrajectory
+  default: true
+  joints:
+    - orbita_roll
+    - orbita_pitch
+    - orbita_yaw
